@@ -1,0 +1,1 @@
+extend-diff-ignore = "^src/_pytest/_version.py$"

@@ -1,0 +1,271 @@
+pytest-xdist (2.2.0-1) unstable; urgency=medium
+
+  * Update to new upstream release 2.2.0 (Closes: #977082)
+  * Use extend-diff-ignore instead of clean for _version.py file
+  * Update d/watch to version 4
+
+ -- Scott Talbert <swt@techie.net>  Sat, 02 Jan 2021 16:47:56 -0500
+
+pytest-xdist (1.32.0-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Scott Talbert ]
+  * Add src/xdist/_version.py to d/clean (Closes: #978268)
+  * Remove Files-Excluded - those files are no longer present
+  * Update Standards-Version to 4.5.1; no changes needed
+
+ -- Scott Talbert <swt@techie.net>  Sun, 27 Dec 2020 22:54:47 -0500
+
+pytest-xdist (1.32.0-2) unstable; urgency=medium
+
+  * Use pybuild.testfiles and eliminate rules overrides
+  * Update debhelper-compat to 13
+
+ -- Scott Talbert <swt@techie.net>  Thu, 18 Jun 2020 18:19:46 -0400
+
+pytest-xdist (1.32.0-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Repository, Repository-
+    Browse.
+
+  [ Scott Talbert ]
+  * Update to new upstream release 1.32.0
+  * Update Standards-Version to 4.5.0
+  * Run autopkgtests on supported Python versions vice installed
+  * Specify that this package doesn't require root to build
+
+ -- Scott Talbert <swt@techie.net>  Tue, 05 May 2020 12:33:10 -0400
+
+pytest-xdist (1.31.0-1) unstable; urgency=medium
+
+  * Update to new upstream release 1.31.0
+
+ -- Scott Talbert <swt@techie.net>  Thu, 02 Jan 2020 11:54:32 -0500
+
+pytest-xdist (1.30.0-2) unstable; urgency=medium
+
+  * Remove Python 2 support (Closes: #937568)
+
+ -- Scott Talbert <swt@techie.net>  Mon, 09 Dec 2019 20:32:37 -0500
+
+pytest-xdist (1.30.0-1) unstable; urgency=medium
+
+  * Update to new upstream release 1.30.0
+  * Update Standards-Version to 4.4.1
+
+ -- Scott Talbert <swt@techie.net>  Sun, 06 Oct 2019 22:35:00 -0400
+
+pytest-xdist (1.29.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+  * Bump Standards-Version to 4.4.0.
+
+  [ Scott Talbert ]
+  * Update to new upstream release 1.29.0
+  * d/control: update required version of pytest to >= 4.4.0
+
+ -- Scott Talbert <swt@techie.net>  Mon, 05 Aug 2019 22:46:03 -0400
+
+pytest-xdist (1.26.1-1) unstable; urgency=medium
+
+  * New upstream release 1.26.1
+
+ -- Scott Talbert <swt@techie.net>  Mon, 28 Jan 2019 19:58:31 -0500
+
+pytest-xdist (1.26.0-1) unstable; urgency=medium
+
+  * New upstream release 1.26.0
+  * d/control: Update Standards Version to 4.3.0 (no changes needed)
+  * d/control: Update debhelper compat version to 12
+
+ -- Scott Talbert <swt@techie.net>  Mon, 21 Jan 2019 20:47:03 -0500
+
+pytest-xdist (1.25.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Scott Talbert <swt@techie.net>  Wed, 02 Jan 2019 23:41:53 -0500
+
+pytest-xdist (1.24.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Scott Talbert <swt@techie.net>  Sun, 11 Nov 2018 10:29:08 -0500
+
+pytest-xdist (1.24.0-2) unstable; urgency=medium
+
+  * Add python-filelock as a test dependency to fix CI tests
+
+ -- Scott Talbert <swt@techie.net>  Sat, 03 Nov 2018 14:55:52 -0400
+
+pytest-xdist (1.24.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Scott Talbert <swt@techie.net>  Thu, 01 Nov 2018 19:31:21 -0400
+
+pytest-xdist (1.23.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Scott Talbert <swt@techie.net>  Wed, 17 Oct 2018 23:13:56 -0400
+
+pytest-xdist (1.23.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/tests: Use AUTOPKGTEST_TMP instead of ADTTMP
+
+  [ Scott Talbert ]
+  * New upstream release
+  * deb/control: update standards version to 4.2.1 (no changes needed)
+
+ -- Scott Talbert <swt@techie.net>  Tue, 11 Sep 2018 21:10:06 -0400
+
+pytest-xdist (1.22.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Scott Talbert <swt@techie.net>  Sun, 18 Mar 2018 21:08:23 -0400
+
+pytest-xdist (1.22.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Scott Talbert <swt@techie.net>  Tue, 20 Feb 2018 20:33:44 -0500
+
+pytest-xdist (1.22.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+
+  [ Scott Talbert ]
+  * New upstream release
+  * deb/copyright: remove files from exclusion that were removed upstream
+  * deb/control: add myself to Uploaders and remove Daniel (Closes: #870844)
+  * deb/control: add pytest-forked dependencies
+  * remove temporarily-disable-test_looponfail_removed_test.patch (not needed)
+  * deb/control: update standards to 4.1.3 (no changes needed)
+  * deb/rules: only run tests in testing directory
+  * deb/copyright: expand copyright span, add myself
+
+ -- Scott Talbert <swt@techie.net>  Fri, 16 Feb 2018 23:07:59 -0500
+
+pytest-xdist (1.18.2-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #864360, #867516):
+    + drop fix-acceptance_test-for-pytest3.patch (solved upstream).
+  * deb/control:
+    + add DPMT as Uploaders.
+    + update build-deps (put version for python-pytest packages).
+    + update Vcs fields (Git repo moved to /git/python-modules).
+    + bump standards to 4.0.0 (no changes needed).
+  * deb/copyright:
+    + expand copyright spans.
+  * deb/gbp.conf:
+    + change debian-branch to meet DEP-14.
+    + add sign-tags field switched to True.
+  * deb/tests/python{,3}-pytest-xdist:
+    * don't stop after first failure in DEP-8 testing (remove -x).
+  * use debhelper level 10 (changes in deb/control and deb/compat).
+  * add temporarily-disable-test_looponfail_removed_test.patch
+    (Closes: #869094).
+
+ -- Daniel Stender <stender@debian.org>  Sat, 05 Aug 2017 19:53:17 +0200
+
+pytest-xdist (1.15.0-3) unstable; urgency=medium
+
+  * deb/rules: activate build-time tests:
+    + add fix-acceptance_test-for-pytest3.patch.
+  * set up DEP-8 tests.
+
+ -- Daniel Stender <stender@debian.org>  Tue, 06 Dec 2016 00:05:12 +0100
+
+pytest-xdist (1.15.0-2) unstable; urgency=medium
+
+  * build Python 3 package (Closes: #782933).
+  * deb/control: put myself into Maintainer field.
+
+ -- Daniel Stender <stender@debian.org>  Wed, 16 Nov 2016 10:33:08 +0100
+
+pytest-xdist (1.15.0-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #790678).
+  * deb/control:
+    + put myself into Uploaders field.
+    + bump debhelper version to 9 (also in deb/compat).
+    + add dh-python, setuptools-scm and pandoc to build-deps.
+    + move execnet, py and pytest from binary-deps up to build-deps.
+    + bump standards to 3.9.8 (no changes needed).
+    + update Homepage (project moved to Github).
+    + add Vcs-Git and -Browser (source at collab-maint).
+    + remove Provides and Breaks for binary package (obsolete).
+    + correct spelling error in package description.
+    + move some fields, fix overlong description line.
+  * deb/clean:
+    + clean whole egg-info/ directory.
+    + add .cache/ (from Pytest) to clean targets.
+  * deb/copyright:
+    + rewrite to met DEP-5.
+    + license changed to MIT.
+  * deb/rules:
+    + add exports for DH_VERBOSE (disabled) and PYBUILD_NAME.
+    + build with buildsystem=pybuild.
+    + install overrides for dh_auto_build (empty) and dh_auto_test.
+    + install override for installdocs to convert README to plain,
+      contribute example/boxed.txt.
+  * deb/watch:
+    + watch pypi.debian.net.
+  * add: deb/gbp.conf, remove: deb/docs.
+
+ -- Daniel Stender <stender@debian.org>  Tue, 27 Sep 2016 10:03:31 +0200
+
+pytest-xdist (1.8-0.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * New upstream release (Closes: #668104)
+  * Add python-pytest to the dependencies.
+  * Version the python-execnet dependency to >= 1.0.9
+
+ -- Simon Chopin <chopin.simon@gmail.com>  Sat, 26 May 2012 16:42:16 +0200
+
+pytest-xdist (1.4-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Rebuild to add Python 2.7 support
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 08 May 2011 16:45:44 +0200
+
+pytest-xdist (1.4-1) unstable; urgency=low
+
+  * python-support => dh_python2
+  * Bumped Standards-Version
+  * Imported Upstream version 1.4
+
+ -- Adam Schmalhofer <Adam.Schmalhofer@gmx.de>  Sat, 26 Feb 2011 22:53:52 +0100
+
+pytest-xdist (1.1-3) unstable; urgency=low
+
+  * Added Enhances-tag
+  * Follow dependancy rename to python-py
+
+ -- Adam Schmalhofer <Adam.Schmalhofer@gmx.de>  Mon, 26 Apr 2010 18:40:40 +0200
+
+pytest-xdist (1.1-2) unstable; urgency=low
+
+  * Added missing build-dependancy (Closes: #573656)
+
+ -- Adam Schmalhofer <Adam.Schmalhofer@gmx.de>  Mon, 15 Mar 2010 19:29:53 +0100
+
+pytest-xdist (1.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #571471)
+
+ -- Adam Schmalhofer <Adam.Schmalhofer@gmx.de>  Thu, 11 Feb 2010 17:26:59 +0100

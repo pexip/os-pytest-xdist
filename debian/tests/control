@@ -1,0 +1,2 @@
+Tests: python3-pytest-xdist
+Depends: python3-pytest-xdist, python3-all, python3-filelock

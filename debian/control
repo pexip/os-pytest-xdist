@@ -1,0 +1,51 @@
+Source: pytest-xdist
+Priority: optional
+Section: python
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: Scott Talbert <swt@techie.net>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-setuptools,
+ python3-setuptools-scm,
+ python3-execnet (>= 1.1),
+ python3-filelock,
+ python3-pytest (>= 6.0.0~),
+ python3-pytest-forked,
+ python3-py,
+ pandoc
+Standards-Version: 4.5.1
+Homepage: https://github.com/pytest-dev/pytest-xdist
+Vcs-Git: https://salsa.debian.org/python-team/packages/pytest-xdist.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/pytest-xdist
+Rules-Requires-Root: no
+
+Package: python3-pytest-xdist
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends}
+Enhances: python3-pytest
+Description: xdist plugin for py.test (Python 3)
+ The pytest-xdist plugin extends py.test with some unique test execution modes:
+ .
+  * Looponfail:
+      Run your tests repeatedly in a subprocess. After each run py.test waits
+      until a file in your project changes and then re-runs the previously
+      failing tests. This is repeated until all tests pass after which again a
+      full run is performed.
+  * Load-balancing:
+      if you have multiple CPUs or hosts you can use those for a combined test
+      run. This allows one to speed up development or to use special resources
+      of remote machines.
+  * Multi-Platform coverage:
+      you can specify different Python interpreters or different platforms and
+      run tests in parallel on all of them.
+ .
+ Before running tests remotely, py.test efficiently synchronizes your program
+ source code to the remote place. All test results are reported back and
+ displayed to your local test session. You may specify different Python
+ versions and interpreters.
+ .
+ This package contains pytext-xdist for Python 3.
