@@ -1,10 +1,11 @@
 Source: pytest-xdist
 Priority: optional
 Section: python
-Maintainer: Debian Python Team <team+python@tracker.debian.org>
-Uploaders: Scott Talbert <swt@techie.net>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Python Team <team+python@tracker.debian.org>
+XSBC-Pexip-Original-Uploaders: Scott Talbert <swt@techie.net>
 Build-Depends:
- debhelper-compat (= 13),
+ debhelper-compat (= 12),
  dh-python,
  python3-all,
  python3-setuptools,
@@ -20,6 +21,7 @@ Homepage: https://github.com/pytest-dev/pytest-xdist
 Vcs-Git: https://salsa.debian.org/python-team/packages/pytest-xdist.git
 Vcs-Browser: https://salsa.debian.org/python-team/packages/pytest-xdist
 Rules-Requires-Root: no
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ bullseye
 
 Package: python3-pytest-xdist
 Architecture: all
